@@ -13,6 +13,13 @@
       referrerpolicy="no-referrer"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
       rel="stylesheet"
       type="text/css"
@@ -296,8 +303,344 @@
       </div>
     </section>
     <!-- banner section end  -->
-    <!-- Fruits section start  -->
 
-    <!-- Fruits section end  -->
+    <!-- deal of the day start  -->
+    <section
+      class="max-w-[1440px] mx-auto mt-10 md:mt-14 lg:mt-14 xl:mt-52 px-3"
+    >
+      <!-- deal container -->
+      <div
+        class="deal flex flex-col md:flex-row justify-between gap-4 items-center mb-6 md:mb-14"
+      >
+        <!-- content  -->
+        <div class="flex-1 text-center md:text-start">
+          <h2 class="text-[24px] md:text-[48px] font-bold">Deal of the day</h2>
+          <p class="text-[#6D6D6D] text-[14px] md-text-[16px] font-normal">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical <br />
+            Latin literature from 45 BC, making it over 2000 years old.
+          </p>
+        </div>
+        <!-- timer  -->
+        <div class="flex flex-row gap-5">
+          <div class="">
+            <div class="times">
+              <div class="valu flex gap-2 items-center">
+                <h2 class="text-[20px] md:text-[48px] font-bold">29</h2>
+                <img src="./images/Frame.png" alt="" class="h-2/4" />
+              </div>
+              <p>Days</p>
+            </div>
+          </div>
+          <div class="">
+            <div class="times">
+              <div class="valu flex gap-2 items-center">
+                <h2 class="text-[20px] md:text-[48px] font-bold">15</h2>
+                <img src="./images/Frame.png" alt="" class="h-2/4" />
+              </div>
+              <p>Hours</p>
+            </div>
+          </div>
+          <div class="">
+            <div class="times">
+              <div class="valu flex gap-2 items-center">
+                <h2 class="text-[20px] md:text-[48px] font-bold">25</h2>
+                <img src="./images/Frame.png" alt="" class="h-2/4" />
+              </div>
+              <p>Minuts</p>
+            </div>
+          </div>
+          <div class="">
+            <div class="times">
+              <div class="valu flex gap-2 items-center">
+                <h2 class="text-[20px] md:text-[48px] font-bold">08</h2>
+                <!-- <img src="./images/Frame.png" alt="" class="h-2/4" /> -->
+              </div>
+              <p>Seconds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- deal box  -->
+      <div class="flex flex-col md:flex-row gap-3 justify-between items-center">
+        <!-- box-1  -->
+        <div
+          class="flex flex-col items-center border border-solid border-#FFAABB px-10 py-5 gap-4 w-full md:w-1/4"
+        >
+          <img src="./images/fruit6.png" alt="" />
+          <h2 class="text-[24px] font-bold">12.90$ - 18.85$</h2>
+          <hr class="text-[#FFAABB] w-full" />
+          <p class="text-[#6D6D6D] font-normal text-[14px] lg:text-[16px]">
+            Apples
+          </p>
+          <img src="./images/Group 24.svg" alt="" />
+          <div class="">
+            <!-- Open the modal  -->
+            <button
+              class="text-red-500 font-normal text-[16px] lg:text-[18px]"
+              onclick="my_modal_1.showModal()"
+            >
+              details
+            </button>
+            <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box max-w-[300px] mx-auto">
+                <div class="centered-content">
+                  <img src="./images/fruit6.png" alt="" />
+                  <h2 class="text-[24px] font-bold">Apples</h2>
+
+                  <p
+                    class="text-[#6D6D6D] font-normal text-[14px] lg:text-[16px] text-center"
+                  >
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <img src="./images/Group 24.svg" alt="" />
+                  <div class="modal-action text-center">
+                    <!-- if there is a button in the form, it will close the modal -->
+                    <button
+                      class="px-4 py-3 border border-solid border-[#F85559] rounded"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href="#"
+                      class="text-[#fff] bg-[#F85559] flex justify-center items-center px-4 py-3 rounded font-normal text-[16px] lg:text-[18px]"
+                      >Bye Now</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+        <!-- box-2  -->
+        <div
+          class="flex flex-col items-center border border-solid border-#FFAABB px-10 py-5 gap-4 w-full md:w-1/4"
+        >
+          <img src="./images/fruit7.png" alt="" />
+          <h2 class="text-[24px] font-bold">12.90$ - 18.85$</h2>
+          <hr class="text-[#FFAABB] w-full" />
+          <p class="text-[#6D6D6D] font-normal text-[14px] lg:text-[16px]">
+            Orange
+          </p>
+          <img src="./images/Group 24.svg" alt="" />
+          <div class="">
+            <!-- Open the modal  -->
+            <button
+              class="text-red-500 font-normal text-[16px] lg:text-[18px]"
+              onclick="my_modal_2.showModal()"
+            >
+              details
+            </button>
+            <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box max-w-[300px] mx-auto">
+                <div class="centered-content">
+                  <img src="./images/fruit7.png" alt="" />
+                  <h2 class="text-[24px] font-bold">Orange</h2>
+
+                  <p
+                    class="text-[#6D6D6D] font-normal text-[14px] lg:text-[16px] text-center"
+                  >
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <img src="./images/Group 24.svg" alt="" />
+                  <div class="modal-action text-center">
+                    <!-- if there is a button in the form, it will close the modal -->
+                    <button
+                      class="px-4 py-3 border border-solid border-[#F85559] rounded"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href="#"
+                      class="text-[#fff] bg-[#F85559] flex justify-center items-center px-4 py-3 rounded font-normal text-[16px] lg:text-[18px]"
+                      >Bye Now</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+
+        <!-- box- 3 -->
+        <div
+          class="flex flex-col items-center border border-solid border-#FFAABB px-10 py-5 gap-4 w-full md:w-1/4"
+        >
+          <img src="./images/fruit8.png" alt="" />
+          <h2 class="text-[24px] font-bold">12.90$ - 18.85$</h2>
+          <hr class="text-[#FFAABB] w-full" />
+          <p class="text-[#6D6D6D] font-normal text-[14px] lg:text-[16px]">
+            Red Dragon
+          </p>
+          <img src="./images/Group 24.svg" alt="" />
+          <div class="">
+            <!-- Open the modal  -->
+            <button
+              class="text-red-500 font-normal text-[16px] lg:text-[18px]"
+              onclick="my_modal_3.showModal()"
+            >
+              details
+            </button>
+            <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box max-w-[300px] mx-auto">
+                <div class="centered-content">
+                  <img src="./images/fruit8.png" alt="" />
+                  <h2 class="text-[24px] font-bold">Red Dragone</h2>
+
+                  <p
+                    class="text-[#6D6D6D] font-normal text-[14px] lg:text-[16px] text-center"
+                  >
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <img src="./images/Group 24.svg" alt="" />
+                  <div class="modal-action text-center">
+                    <!-- if there is a button in the form, it will close the modal -->
+                    <button
+                      class="px-4 py-3 border border-solid border-[#F85559] rounded"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href="#"
+                      class="text-[#fff] bg-[#F85559] flex justify-center items-center px-4 py-3 rounded font-normal text-[16px] lg:text-[18px]"
+                      >Bye Now</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+        <!-- box-4  -->
+        <div
+          class="flex flex-col items-center border border-solid border-#FFAABB px-10 py-5 gap-4 w-full md:w-1/4"
+        >
+          <img src="./images/fruit9.png" alt="" />
+          <h2 class="text-[24px] font-bold">12.90$ - 18.85$</h2>
+          <hr class="text-[#FFAABB] w-full" />
+          <p class="text-[#6D6D6D] font-normal text-[14px] lg:text-[16px]">
+            Banana
+          </p>
+          <img src="./images/Group 24.svg" alt="" />
+          <div class="">
+            <!-- Open the modal  -->
+            <button
+              class="text-red-500 font-normal text-[16px] lg:text-[18px]"
+              onclick="my_modal_4.showModal()"
+            >
+              details
+            </button>
+            <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box max-w-[300px] mx-auto">
+                <div class="centered-content">
+                  <img src="./images/fruit9.png" alt="" />
+                  <h2 class="text-[24px] font-bold">Banana</h2>
+
+                  <p
+                    class="text-[#6D6D6D] font-normal text-[14px] lg:text-[16px] text-center"
+                  >
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <img src="./images/Group 24.svg" alt="" />
+                  <div class="modal-action text-center">
+                    <!-- if there is a button in the form, it will close the modal -->
+                    <button
+                      class="px-4 py-3 border border-solid border-[#F85559] rounded"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href="#"
+                      class="text-[#fff] bg-[#F85559] flex justify-center items-center px-4 py-3 rounded font-normal text-[16px] lg:text-[18px]"
+                      >Bye Now</a
+                    >
+                  </div>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </div>
+      <!-- last buttn  -->
+      <div class="flex justify-center my-10">
+        <a
+          href="#"
+          class="text-[#fff] bg-[#F85559] flex justify-center items-center px-4 py-3 rounded font-normal text-[16px] lg:text-[18px]"
+          >Shop All</a
+        >
+      </div>
+    </section>
+
+    <!-- deal of the day end  -->
+    <!-- meet the team section start  -->
+    <section>
+      <div
+        class="meet max-w-[1440px] mx-auto flex flex-col items-center px-3 py-3 md:px-6 md:py-6 lg:px-12 lg:py-24"
+      >
+        <!-- meet top  -->
+        <div class="text-white text-center">
+          <h2 class="text-[24px] md:text-[48px]">Meet the team section</h2>
+          <p class="mt-3 mb-10">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical <br />Latin literature from 45 BC, making it
+            over 2000 years old.
+          </p>
+        </div>
+        <!-- meet bottom  -->
+        <div
+          class="flex flex-col md:flex-row justify-between gap-3 md:gap-8 lg:gap-20"
+        >
+          <!-- single item  -->
+          <div class="text-white flex flex-col items-center gap-1 mt-4">
+            <img src="./images/member1.png" alt="" />
+            <h2 class="mt-5">Awlad Hossain</h2>
+            <p>Fruits Expert</p>
+            <div class="social flex gap-3">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <!-- single item  -->
+          <div class="text-white flex flex-col items-center gap-1 mt-4">
+            <img src="./images/member2.png" alt="" />
+            <h2 class="mt-5">Safia Chowdhury</h2>
+            <p>Fruits Expert</p>
+            <div class="social flex gap-3">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <!-- single item  -->
+          <div class="text-white flex flex-col items-center gap-1 mt-4">
+            <img src="./images/member3.png" alt="" />
+            <h2 class="mt-5">Rokib Hossain</h2>
+            <p>Fruits Expert</p>
+            <div class="social flex gap-3">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <!-- single item  -->
+          <div class="text-white flex flex-col items-center gap-1 mt-4">
+            <img src="./images/member4.png" alt="" />
+            <h2 class="mt-5">Chaity</h2>
+            <p>Fruits Expert</p>
+            <div class="social flex gap-3">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- meet the team section start  -->
   </body>
 </html>
