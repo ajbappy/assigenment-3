@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+}
+.fruits {
+  z-index: 10;
+  position: absolute;
+  left: 8%;
+  bottom: -12%;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
