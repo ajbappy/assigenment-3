@@ -30,6 +30,7 @@ body {
   background-position: center center;
   background-size: cover;
   background-blend-mode: overlay;
+
   /* padding: 50px 100px; */
 }
 
@@ -38,4 +39,11 @@ body {
   /* background-color: #fff; */
   border-radius: 60%;
   font-size: 24px;
+}
+
+.footer {
+  background-color: black;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
